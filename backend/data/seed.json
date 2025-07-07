@@ -1,0 +1,138 @@
+{
+  "products": [
+    {
+      "id": "prod_P001",
+      "title": "Manzanas Rojas",
+      "description": "Frescas y jugosas",
+      "images": ["https://i.ibb.co/FbfyzVp/manzanas-rojas.png"],
+      "collection_id": "coll_frutas_verduras",
+      "variants": [
+        { "title": "1kg", "prices": [{ "currency_code": "bob", "amount": 1000 }], "inventory_quantity": 100 }
+      ]
+    },
+    {
+      "id": "prod_P002",
+      "title": "Leche PIL",
+      "description": "Leche entera pasteurizada",
+      "images": ["https://i.ibb.co/b3vXXst/leche-pil.png"],
+      "collection_id": "coll_lacteos_huevos",
+      "variants": [
+        { "title": "1L", "prices": [{ "currency_code": "bob", "amount": 600 }], "inventory_quantity": 100 }
+      ]
+    },
+    {
+      "id": "prod_P003",
+      "title": "Pechuga de Pollo",
+      "description": "Pollo fresco de granja",
+      "images": ["https://i.ibb.co/yQJ4pW7/pechuga-pollo.png"],
+      "collection_id": "coll_carnes_aves",
+      "variants": [
+        { "title": "1kg", "prices": [{ "currency_code": "bob", "amount": 2500 }], "inventory_quantity": 100 }
+      ]
+    },
+    {
+      "id": "prod_P004",
+      "title": "Pan Marraqueta",
+      "description": "Recién horneado",
+      "images": ["https://i.ibb.co/YTBm0sM/pan-marraqueta.png"],
+      "collection_id": "coll_panaderia",
+      "variants": [
+        { "title": "unidad", "prices": [{ "currency_code": "bob", "amount": 100 }], "inventory_quantity": 100 }
+      ]
+    },
+    {
+      "id": "prod_P005",
+      "title": "Arroz Grano de Oro",
+      "description": "Arroz popular",
+      "images": ["https://i.ibb.co/xL1sD0z/arroz.png"],
+      "collection_id": "coll_despensa",
+      "variants": [
+        { "title": "1kg", "prices": [{ "currency_code": "bob", "amount": 1200 }], "inventory_quantity": 100 }
+      ]
+    },
+    {
+      "id": "prod_P006",
+      "title": "Bounty Minis",
+      "description": "Chocolate con coco",
+      "images": ["https://i.ibb.co/6r0M7k8/bounty.png"],
+      "collection_id": "coll_dulces_snacks",
+      "variants": [
+        { "title": "200g", "prices": [{ "currency_code": "bob", "amount": 800 }], "inventory_quantity": 100 }
+      ]
+    },
+    {
+      "id": "prod_P007",
+      "title": "Coca-Cola 2L",
+      "description": "Bebida gaseosa refrescante",
+      "images": ["https://i.ibb.co/FzTgJv5/coca-cola.png"],
+      "collection_id": "coll_bebidas",
+      "variants": [
+        { "title": "2L", "prices": [{ "currency_code": "bob", "amount": 1000 }], "inventory_quantity": 100 }
+      ]
+    },
+    {
+      "id": "prod_P008",
+      "title": "Jabón Dove",
+      "description": "Barra de belleza",
+      "images": ["https://i.ibb.co/C0bN2bt/jabon-dove.png"],
+      "collection_id": "coll_cuidado_personal",
+      "variants": [
+        { "title": "90g", "prices": [{ "currency_code": "bob", "amount": 700 }], "inventory_quantity": 100 }
+      ]
+    },
+    {
+      "id": "prod_P009",
+      "title": "Detergente OLA",
+      "description": "Para ropa blanca y de color",
+      "images": ["https://i.ibb.co/C692pYT/detergente-ola.png"],
+      "collection_id": "coll_limpieza",
+      "variants": [
+        { "title": "2kg", "prices": [{ "currency_code": "bob", "amount": 3000 }], "inventory_quantity": 120 }
+      ]
+    },
+    {
+      "id": "prod_P010",
+      "title": "Yogurt Griego",
+      "description": "Natural y sin azúcar",
+      "images": ["https://i.ibb.co/MGDxS6f/yogurt-griego.png"],
+      "collection_id": "coll_lacteos_huevos",
+      "variants": [
+        { "title": "150g", "prices": [{ "currency_code": "bob", "amount": 900 }], "inventory_quantity": 100 }
+      ]
+    },
+    {
+      "id": "prod_P011",
+      "title": "Tomates",
+      "description": "Tomates frescos para ensalada",
+      "images": ["https://i.ibb.co/xHHFp6V/tomates.png"],
+      "collection_id": "coll_frutas_verduras",
+      "variants": [
+        { "title": "1kg", "prices": [{ "currency_code": "bob", "amount": 800 }], "inventory_quantity": 100 }
+      ]
+    },
+    {
+      "id": "prod_P012",
+      "title": "Café Copacabana",
+      "description": "Café tostado y molido",
+      "images": ["https://i.ibb.co/QMgW4F0/cafe-copacabana.png"],
+      "collection_id": "coll_cafe_te",
+      "variants": [
+        { "title": "250g", "prices": [{ "currency_code": "bob", "amount": 3500 }], "inventory_quantity": 100 }
+      ]
+    }
+  ],
+  "collections": [
+    { "id": "coll_ofertas_promociones", "title": "Ofertas y Promociones" },
+    { "id": "coll_frutas_verduras", "title": "Frutas y Verduras" },
+    { "id": "coll_lacteos_huevos", "title": "Lácteos y Huevos" },
+    { "id": "coll_carnes_aves", "title": "Carnes y Aves" },
+    { "id": "coll_panaderia", "title": "Panadería" },
+    { "id": "coll_despensa", "title": "Despensa" },
+    { "id": "coll_dulces_snacks", "title": "Dulces y Snacks" },
+    { "id": "coll_bebidas", "title": "Bebidas" },
+    { "id": "coll_cuidado_personal", "title": "Cuidado Personal" },
+    { "id": "coll_limpieza", "title": "Limpieza" },
+    { "id": "coll_comida_lista", "title": "Comida Lista" },
+    { "id": "coll_cafe_te", "title": "Café y Té" }
+  ]
+}
