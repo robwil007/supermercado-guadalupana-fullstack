@@ -1,0 +1,9 @@
+{
+  "name": "Supermercado Guadalupana",
+  "description": "An e-commerce application for the Guadalupana Supermarket in Bolivia, inspired by modern grocery delivery apps. Users can browse products, see special offers, manage a shopping cart, and sign in.",
+  "requestFramePermissions": [
+    "geolocation",
+    "camera"
+  ],
+  "prompt": ""
+}
