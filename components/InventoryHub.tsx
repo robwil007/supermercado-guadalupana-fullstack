@@ -196,7 +196,7 @@ const ImportModal: React.FC<{ onClose: () => void; onImport: (products: Product[
                 </header>
                  <div className="p-6 space-y-4">
                     <p className="text-sm">Sube un archivo CSV con las siguientes columnas: <br/> <code className="bg-gray-100 p-1 rounded text-xs">id,name,cost,price,stock,category,image,bundle_offers</code></p>
-                    <p className="text-xs text-gray-500">Nota: La importación actualizará los productos existentes (por ID) o creará nuevos si el ID no existe. La columna `bundle_offers` debe ser un string JSON válido, ej: `"[{\\"quantity\\":2,\\"price\\":15}]"`. Si no hay ofertas, dejar en blanco.</p>
+                    <p className="text-xs text-gray-500">Nota: La importación actualizará los productos existentes (por ID) o creará nuevos si el ID no existe. La columna `bundle_offers` debe ser un string JSON válido, ej: `'[{"quantity":2,"price":15}]'`. Si no hay ofertas, dejar en blanco.</p>
                     <input type="file" accept=".csv" onChange={handleFileChange} className="w-full p-2 border rounded"/>
                 </div>
             </div>
