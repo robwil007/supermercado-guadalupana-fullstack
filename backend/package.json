@@ -8,7 +8,7 @@
     "dev": "medusa develop",
     "build": "medusa build",
     "start": "medusa start",
-    "seed": "medusa seed -f ./data/seed.json"
+    "seed": "dotenv -e .env -- medusa seed -f ./data/seed.json"
   },
   "dependencies": {
     "@medusajs/medusa": "^1.18.0",
@@ -16,6 +16,9 @@
     "medusa-fulfillment-manual": "^1.1.39",
     "medusa-payment-manual": "^1.0.24",
     "pg": "^8.11.3"
+  },
+  "devDependencies": {
+    "dotenv-cli": "^7.4.2"
   },
   "author": "Guadalupana Team",
   "license": "UNLICENSED"
