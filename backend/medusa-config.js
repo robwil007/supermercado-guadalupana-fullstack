@@ -1,4 +1,3 @@
-
 /** @type {import('@medusajs/medusa').ConfigModule} */
 module.exports = {
   projectConfig: {
@@ -7,10 +6,18 @@ module.exports = {
     database_url: process.env.DATABASE_URL,
     database_type: "postgres",
 
+    // Configuración SSL explícita para compatibilidad con Neon.tech y otros proveedores en la nube.
+    // Esto soluciona el error ECONNRESET.
+    database_extra: {
+      ssl: {
+        rejectUnauthorized: false,
+      },
+    },
+
     // Configuración de CORS para permitir que nuestro frontend se comunique con este backend.
-    // En un futuro, cambiaremos "/.*/" por la URL específica de nuestro frontend para mayor seguridad.
-    store_cors: "/.*/",
-    admin_cors: "/.*/",
+    // Se ha especificado la URL del frontend para mayor seguridad.
+    store_cors: "https://guadalupana-frontend.vercel.app",
+    admin_cors: "https://guadalupana-frontend.vercel.app",
   },
   plugins: [],
 };
