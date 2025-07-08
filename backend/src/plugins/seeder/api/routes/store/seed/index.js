@@ -1,7 +1,7 @@
 module.exports = (router) => {
   router.get("/store/seed", async (req, res) => {
     const { secret } = req.query;
-
+    
     if (secret !== process.env.SEED_SECRET) {
       return res.status(401).json({ message: "Unauthorized: Invalid secret" });
     }
