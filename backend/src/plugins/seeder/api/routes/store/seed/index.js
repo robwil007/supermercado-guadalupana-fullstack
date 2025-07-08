@@ -1,7 +1,11 @@
-module.exports = (router) => {
-  router.get("/store/seed", async (req, res) => {
+const cors = require("cors");
+
+module.exports = (router, corsOptions) => {
+  // Configurar CORS para esta ruta específica
+  router.get("/store/seed", cors(corsOptions), async (req, res) => {
     const { secret } = req.query;
     
+    // 1. Proteger el endpoint
     if (secret !== process.env.SEED_SECRET) {
       return res.status(401).json({ message: "Unauthorized: Invalid secret" });
     }

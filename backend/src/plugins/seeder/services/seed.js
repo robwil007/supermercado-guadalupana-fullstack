@@ -16,6 +16,7 @@ class SeedService extends BaseService {
   }
 
   async seed() {
+    // La ruta ahora es relativa al directorio raíz del proyecto
     const seedFilePath = path.join(process.cwd(), "data", "seed.json");
     if (!fs.existsSync(seedFilePath)) {
         throw new Error(`Seed file not found at: ${seedFilePath}`);
@@ -51,7 +52,7 @@ class SeedService extends BaseService {
         id: product.id,
         title: product.title,
         description: product.description,
-        thumbnail: product.images[0],
+        thumbnail: product.images[0], // Medusa usa thumbnail para la imagen principal
         images: product.images,
         collection_id: collection.id,
         variants: product.variants.map(v => ({
